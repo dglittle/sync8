@@ -6,6 +6,11 @@ This api consists of a set of global functions which operate on these trees, usu
 
 The api supports both javascript arrays and strings.
 
+# methods
+var sync8 = require('sync8')
+sync8.create_node(version, elems, end_cap, sort_key)
+
+
 # datastructure
 
 Here is an example sync8 node:
@@ -274,3 +279,40 @@ sync8.break_node(
              // which is useful when performing an insertion
 )
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sync8.create_node(version, elems, end_cap, sort_key)
+sync8.get(S, i, is_anc)
+sync8.set(S, i, v, is_anc)
+sync8.length(S, is_anc)
+sync8.add_version(S, version, splices, sort_key, is_anc)
+sync8.traverse(S, is_anc, cb, view_deleted, tail_cb)
+sync8.generate_braid(S, version, is_anc)
+sync8.apply_bubbles(S, to_bubble)
+sync8.break_node(node, x, end_cap, new_next)
+
+
+
+
+
